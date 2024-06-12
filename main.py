@@ -26,8 +26,8 @@ def crossover(parent1, parent2):
     return child
 
 
-# Main genetic algorithm function
-def genetic_algorithm(target, population_size=100, mutation_rate=0.01, max_generations=1000):
+# genetic algorithm function to yield a word based on input
+def wgen(target, population_size=100, mutation_rate=0.01, max_generations=1000):
     unique_chars = list(set(target))
     available_chars = unique_chars + [char.upper() for char in unique_chars]
 
@@ -48,7 +48,7 @@ def genetic_algorithm(target, population_size=100, mutation_rate=0.01, max_gener
         fitness_scores.sort(key=lambda x: x[1], reverse=True)
 
         # Yield the best word of the current generation
-        best_word, best_score = fitness_scores[0]
+        best_word, best_score = fitness_scores[0] # TODO: think whether u need best or worst
         yield best_word, best_score, generations
 
         if best_score == len(target):
@@ -80,7 +80,7 @@ if __name__ == "__main__":
     mutation_rate = 1
     max_generations = 2000
 
-    gen = genetic_algorithm(target_word, population_size, mutation_rate, max_generations)
+    gen = wgen(target_word, population_size, mutation_rate, max_generations)
     words = []
     scores = []
     for word, score, generation in gen:
