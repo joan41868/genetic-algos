@@ -1,0 +1,19 @@
+qwerty123asdf#$zxcv
+
+4.448201068477807 -> gen 1000; pop 200; mut 0.05
+4.358303688442186 -> gen 1000; pop 200; mut 0.05
+4.372881922133741 -> gen 2000; pop 200; mut 0.05
+4.273595455294256 -> gen 2000; pop 200; mut 0.05
+4.479532239500830 -> gen 2000; pop 100; mut 0.05
+4.273740660625364 -> gen 2000; pop 100; mut 0.1
+4.387446954198534 -> gen 2000; pop 100; mut 0.01
+4.412382068180760 -> gen 3000; pop 100; mut 0.01
+4.508374658457240 -> gen 3000; pop 200; mut 0.01
+4.261688971232666 -> gen 2000; pop 100; mut 0.001
+4.2764303564620985 -> gen 2000; pop 100; mut 0.7    - by raw observation, this is one of the best results; overall, lower genetic scores tend to be most different from the original
+4.303996258487923 -> gen 2000; pop 100; mut 0.7
+4.288568876881798 -> gen 2000; pop 100; mut 0.8 - low scores, low entropy
+4.314940503240318 -> gen 2000; pop 100; mut 1   - score of 2) achieved here
+4.321826784117768 -> gen 2000; pop 100; mut 0.9
+4.3877080819515974 -> gen 2000; pop 200; mut 0.9
+4.269648954067663 -> gen 2000; pop 50; mut 0.9
